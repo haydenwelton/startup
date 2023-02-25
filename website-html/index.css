@@ -407,6 +407,7 @@ body {
   flex: 0 0 auto;
   width: 1265px;
   border: solid;
+  border-width: thick;
   border-color: black;
   border-radius: 10px;
   padding: 10px;
