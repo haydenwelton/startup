@@ -403,6 +403,7 @@ body {
   gap: 20px;
 }
 .burger-builder-container7 {
+  background: white;
   flex: 0 0 auto;
   width: 1265px;
   border: solid;
@@ -485,6 +486,7 @@ body {
 
 .burger-builder-ul{
   border-style: solid;
+  border-width: thick;
   border-radius: 10px;
     border-color: black;
     margin-right: 100px;
