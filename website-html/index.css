@@ -417,6 +417,7 @@ body {
   gap: 10px;
 }
 .burger-builder-textarea{
+    font-size: 20px;
     border-style: solid;
   border-radius: 5px;
     border-color: black;
@@ -425,6 +426,7 @@ body {
 }
 
 .burger-builder-textarea1{
+    font-size: 20px;
     border-style: solid;
   border-radius: 5px;
     border-color: black;
