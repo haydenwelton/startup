@@ -381,7 +381,6 @@ body {
 .burger-builder-image {
   width: 500px;
  height: 500px;
-  object-fit: cover;
 }
 .burger-builder-container5 {
   flex: 0 0 auto;
