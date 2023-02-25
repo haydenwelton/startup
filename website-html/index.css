@@ -331,3 +331,137 @@ body {
   }
 }
 
+
+
+
+
+
+.burger-builder-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.burger-builder-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.burger-builder-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.burger-builder-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.burger-builder-container4 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.burger-builder-image {
+  width: 500px;
+ height: 500px;
+  object-fit: cover;
+}
+.burger-builder-container5 {
+  flex: 0 0 auto;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.burger-builder-container6 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.burger-builder-container7 {
+  flex: 0 0 auto;
+  width: 50%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.burger-builder-textarea{
+    border-style: solid;
+  border-radius: 5px;
+    border-color: black;
+      font-family: "Raleway";
+    width: 300px;
+}
+
+.burger-builder-textarea1{
+    border-style: solid;
+  border-radius: 5px;
+    border-color: black;
+      font-family: "Raleway";
+  height: 300px;
+  width: 300px;
+}
+
+.buttonDel {
+    font-size: 20px;
+    padding: 30px;
+    font-family: "Raleway";
+  background: red;
+}
+.buttonCre {
+    font-size: 20px;
+  padding: 30px;
+    font-family: "Raleway";
+  background: lightgreen;
+}
+
+.burger-builder-ul{
+  border-style: solid;
+  border-radius: 10px;
+    border-color: black;
+    margin-right: 100px;
+  height: 300px;
+    width: 300px;
+}
+
+.Listheader {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 0px;
+  font-family: "Raleway";
+  border-color: black;
+    padding: 20px;
+    width: 500px;
+}
+
+.burger-builder-imagebar {
+  width: 300px;
+ height: 300px;
+  object-fit: cover;
+}
