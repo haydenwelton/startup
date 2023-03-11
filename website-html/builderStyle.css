@@ -620,25 +620,48 @@ body {
   animation: pulse 0.3s linear 1;
 }
 
- #burger-builder-ul {
-	 position: absolute;
-	 transform: translate(-150%, -140%);
-	 background: white;
-	 border-style: solid;
-	 border-width: 0.5vw;
-	 border-radius: 2vw;
-	 border-color: black;
-	 margin-right: 25vw;
-	 height: 15vw;
-	 width: 15vw;
-	 box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+#burger-builder-ul {
+    justify-content: center;
+    align-items: center;
+  	 font-size: 1.2vw;
+    text-transform: uppercase;
+    position: absolute;
+    transform: translate(-150%, -140%);
+    background: white;
+    border-style: solid;
+    border-width: 0.5vw;
+    border-radius: 2vw;
+    border-color: black;
+    margin-right: 25vw;
+    padding-left: 5.75vw;
+    height: 16vw;
+    width: 10vw;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    overflow-y: auto;
 }
+
+#burger-builder-ul li {
+  margin-bottom: 0.25vw; /* Adjust the value as needed */
+}
+
+#burger-builder-ul::-webkit-scrollbar {
+    width: 1vw;
+    height: 10vw;
+    background-color: transparent;
+ 	 transform: translate(-20%);
+}
+
+#burger-builder-ul::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
  .Listheader {
 	 font-size: 1.55vw;
 	 text-align: left;
 	 margin-left: -2vw;
 	 font-family: "Mouse Memoirs", sans-serif;
 	 border-color: black;
+   background-color: red;
 	 color: black;
 	 padding: 0.75vw;
 	 width: 10vw;
