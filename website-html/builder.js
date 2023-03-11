@@ -16,9 +16,10 @@ const addFilling = (type) => {
 };
 
 const addFillingList = (type) => {
-  var ingredientName = type.value;
-  const filling = document.creatElement('li'); filling.appendChild(document.createTextNode(ingredientName));
-  list.appendChild(filling);
+    const fillingItem = document.createElement('li');
+    fillingItem.textContent = type;
+    list.insertBefore(fillingItem, list.firstChild);
+  
 };
 
 const generateButtons = () => {
@@ -31,6 +32,7 @@ const generateButtons = () => {
     button.innerText = filling;
     button.onclick = function() { 
       addFilling(filling);
+      addItem(filling);
     };
     button.addEventListener("click", () => {
     audio.play();
@@ -42,7 +44,12 @@ const generateButtons = () => {
   burger.classList.add("margin-top");
 };
 
-const reset = () => burger.innerHTML = "";
+const reset = () => {
+  burger.innerHTML = "";
+    while (list.firstChild) {
+        list.removeChild(list.firstChild);
+    }
+} 
 
 const start = () => {
     reset();
@@ -55,3 +62,4 @@ const deleter = (btn) => {
   reset();
   btn.onclick = reset;
 };
+
