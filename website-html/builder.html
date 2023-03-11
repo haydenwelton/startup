@@ -1,58 +1,61 @@
- <link rel="stylesheet" href="index.css">
 <header>
-<div class="nav">
-  <input type="checkbox" id="nav-check"> 
-  <div class="nav-links">
-    <a target="_self" href="builder.html">Burger Builder</a>
-    <a  target="_self" href="myburger.html" target="_blank">My Burgers</a>
-    <a  target="_self" href="community.html" target="_blank">Community</a>
+  <div class="nav">
+    <div class="nav-links">
+      <a target="_self" href="builder.html">Burger Builder</a>
+      <a target="_self" href="builder.html">My Burgers</a>
+      <a target="_self" href="builder.html">Community</a>
+    </div>
   </div>
-</div>
+  <div id="counter"></div>
 </header>
-<body>
-<div>
-  <link href="./burger-builder.css" rel="stylesheet" />
-  <div class="burger-builder-container">
-    <div class="burger-builder-container1">
-      <div class="burger-builder-container2">
-        <div class="burger-builder-container3">
-          <div class="burger-builder-container4">
-            <ul class="burger-builder-ul">
-              <div class="Listheader">Layers:</div>
-              <li class="list-item"><span>Tomato x1</span></li>
-              <li class="list-item"><span>Cheese x 2</span></li>
-              <li class="list-item"><span>Lettuce x 1</span></li>
+<div class="area" >
+   <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
             </ul>
-            <img
-              src="burger.png"
-              class="Burger"
-            />
-          </div>
-          <div class="burger-builder-container5">
-            <textarea
-              placeholder="Burger Name"
-              class="burger-builder-textarea"
-            ></textarea>
-            <textarea
-              placeholder="Burger Description (optional)"
-              class="burger-builder-textarea1"
-            ></textarea>
-            <div class="burger-builder-container6">
-              <button class="buttonDel">Delete All</button>
-              <button class="buttonCre">Create</button>
-            </div>
-          </div>
-        </div>
+<body onLoad="start(this)">
+  <div class="wrapper">
+    <div class="burger" id="burger">
+      <div class="bun top-bun"></div>
+      <div class="cheese"></div>
+      <div class="patty"></div>
+      <div class="cheese"></div>
+      <div class="meat"></div>
+      <div class="lettuce"></div>
+      <div class="tomato"></div>
+      <div class="onion"></div>
+      <div class="pickle">
+        <div class="pickles"></div>
+        <div class="pickles"></div>
       </div>
+      <div class="ketchup"></div>
+      <div class="mustard"></div>
+      <div class="mayo"></div>
+      <div class="bun bottom-bun"></div>
     </div>
-    <div class="burger-builder-container7">
-              <div class="burger-builder-containeringredient"> <img src="bun.png" alt="image" class="burger-builder-imagebar"/></div>
-                   <div class="burger-builder-containeringredient">  <img src="patty2.jpg" alt="image" class="burger-builder-imagebar"/></div>
-                    <div class="burger-builder-containeringredient">       <img src="cheese.jpg" alt="image" class="burger-builder-imagebar"/></div>
-                        <div class="burger-builder-containeringredient">    <img src="tomato.jpg" alt="image" class="burger-builder-imagebar"/></div>
-                         
+    <ol id="burger-builder-ul">
+      <div class="Listheader">Layers:</div>
+      
+    </ol>
+    <div class="burger-builder-container2">
+      <textarea placeholder="  Burger Name" class="burger-builder-textarea"></textarea>
+      <textarea placeholder="  Burger Description (optional)" class="burger-builder-textarea1"></textarea>
+    </div>
+    <div class="burger-builder-container">
+      <button class="buttonDel" onclick="deleter(this)">Delete All</button>
+      <button class="buttonCre" onclick="deleter(this)">Create</button>
+    </div>
+    <div class="burger-builder-container3">
+      <nav id="buttons"></nav>
     </div>
   </div>
-</div>
-
 </body>
+</div>
