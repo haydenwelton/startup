@@ -728,7 +728,7 @@ body {
 }
  .burger-builder-container {
 	 position: absolute;
-	 transform: translate(175%, -20%);
+	 transform: translate(170%, -20%);
 }
  .burger-builder-container2 {
 	 transform: translate(160%, -110%);
