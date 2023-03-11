@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
+
  .nav {
 	 height: 50px;
 	 width: 100%;
@@ -26,6 +28,7 @@
 	 font-size: 18px;
 }
  .nav > .nav-links > a {
+   font-family: "Raleway";
 	 display: inline-block;
 	 padding: 13px 10px 13px 10px;
 	 text-decoration: none;
