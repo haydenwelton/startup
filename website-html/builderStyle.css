@@ -257,7 +257,7 @@ body {
 }
  .tomato::before {
 	 content: "";
-	 width: 97%;
+	 width: 100%;
 	 height: 95%;
 	 display: block;
 	 position: absolute;
@@ -278,7 +278,7 @@ body {
 }
  .onion::before {
 	 content: "";
-	 width: 97%;
+	 width: 100%;
 	 height: 98%;
 	 display: block;
 	 position: absolute;
