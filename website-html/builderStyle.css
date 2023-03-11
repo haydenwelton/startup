@@ -4,6 +4,19 @@
 	 width: 100%;
 	 position: relative;
 }
+
+.nav > .nav-header {
+
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: black;
+  padding: 10px 10px 10px 10px;
+}
+
  .nav > .nav-btn {
 	 display: none;
 }
@@ -22,11 +35,16 @@
  .nav > .nav-links > a:hover {
 	 color: red;
 }
+
+.nav > #nav-check {
+  display: none;
+}
+
  body {
 	 overflow-x: hidden;
 	 overflow-y: hidden;
 	 background: #262525;
-	 margin-top: 0vw;
+	 margin-top: -0.2vw;
 }
  :root {
 	 --bun: #dd801c;
@@ -585,12 +603,20 @@
 	 z-index: 2;
 }
  .btn:hover:not([disabled]) {
+   	 transform: translate(0em, -0.25em);
 	 background-color: black;
 	 color: #fff;
 }
- .btn:active {
-	 transform: translate(0em, 0.5em);
+
+@keyframes pulse{
+  25%  {transform: scale(0.9);}
+  75%  {transform: scale(1.1);}
 }
+
+ .btn:active {
+  animation: pulse 0.3s linear 1;
+}
+
  #burger-builder-ul {
 	 position: absolute;
 	 transform: translate(-150%, -140%);
@@ -637,7 +663,7 @@
 	 transform: translate3d(0, 0.5em, -1em);
 }
  .buttonDel:active {
-	 transform: translate(0em, 0.5em);
+	   animation: pulse 0.3s linear 1;
 }
  .buttonDel:active::before {
 	 box-shadow: 0 0 0 2px var(--bun-dark), 0 0.5em 0 0 lightblue;
@@ -661,6 +687,13 @@
 	 transform: translate(0em, -0.25em);
 	 background-color: #052e0c;
 	 color: #fff;
+}
+ .buttonCre:active {
+	   animation: pulse 0.3s linear 1;
+}
+ .buttonCre:active::before {
+	 box-shadow: 0 0 0 2px var(--bun-dark), 0 0.5em 0 0 lightblue;
+	 transform: translate3d(0, 0.5em, -1em);
 }
  #buttons {
 	 width: 50vw;
