@@ -1,6 +1,6 @@
 const burger = document.getElementById("burger");
 const list = document.getElementById("burger-builder-ul");
-const fillings = ["bottom-bun", "patty", "cheese", "lettuce", "pickle", "ketchup", "mustard", "mayo", "tomato", "onion", "top-bun"];
+const fillings = ["bottom-bun", "patty", "cheese", "lettuce", "ketchup", "mustard", "mayo", "tomato", "onion", "top-bun"];
 
 const audio = new Audio("add.mp3");
 const buttons = document.querySelectorAll("button");
