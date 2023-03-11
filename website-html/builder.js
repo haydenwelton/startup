@@ -2,6 +2,10 @@ const burger = document.getElementById("burger");
 const list = document.getElementById("burger-builder-ul");
 const fillings = ["bottom-bun", "patty", "cheese", "lettuce", "pickle", "ketchup", "mustard", "mayo", "tomato", "onion", "top-bun"];
 
+const audio = new Audio("add.mp3");
+const buttons = document.querySelectorAll("button");
+
+
 
 
 const addFilling = (type) => {
@@ -25,7 +29,12 @@ const generateButtons = () => {
     const button = document.createElement('button');
     button.classList.add('btn');
     button.innerText = filling;
-    button.onclick = function() { addFilling(filling); };
+    button.onclick = function() { 
+      addFilling(filling);
+    };
+    button.addEventListener("click", () => {
+    audio.play();
+  });
     buttonsWrapper.appendChild(button);
   });
 
