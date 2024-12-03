@@ -1,13 +1,13 @@
 <header>
-    <link rel="stylesheet/less" type="text/css" href="styles.less"/> 
+    <link rel="stylesheet/css" type="text/css" href="builderStyle.css"/> 
     <link rel="stylesheet" href="builderStyle.css"/>
-  <div class="nav">
-    <div class="nav-links">
-    <a target="_self" href="builder.html">Burger Builder</a>
-    <a  target="_self" href="myburger.html" target="_blank">My Burgers</a>
-    <a  target="_self" href="community.html" target="_blank">Community</a>
+    <div class="nav">
+      <div class="nav-links">
+      <a target="_self" href="builder.html">Burger Builder</a>
+      <a  target="_self" href="myburger.html" target="_blank">My Burgers</a>
+      <a  target="_self" href="community.html" target="_blank">Community</a>
+      </div>
     </div>
-  </div>
   <div id="counter"></div>
 </header>
 <div class="area" >
@@ -47,17 +47,18 @@
       <div class="Listheader">Layers:</div>
     </ol>
     <div class="burger-builder-container2">
-      <textarea placeholder="  Burger Name" class="burger-builder-textarea"></textarea>
-      <textarea placeholder="  Burger Description (optional)" class="burger-builder-textarea1"></textarea>
+      <input id="burgerName" placeholder="  Burger Name" class="burger-builder-textarea"></input>
+      <textarea id="burgerDescription" placeholder="  Burger Description (optional)" class="burger-builder-textarea1"></textarea>
     </div>
     <div class="burger-builder-container">
       <button class="buttonDel" onclick="deleter(this)">Delete All</button>
-      <button class="buttonCre" onclick="deleter(this)">Create</button>
+      <button class="buttonCre" onclick="create(this)">Create</button>
     </div>
     <div class="burger-builder-container3">
       <nav id="buttons"></nav>
     </div>
   </div>
     <script src="builder.js"></script>
+    <script src="peerProxy.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
 </body>
